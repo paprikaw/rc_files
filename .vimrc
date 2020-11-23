@@ -13,6 +13,8 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'zhou13/vim-easyescape'
+" C completion
+Plug 'rip-rip/clang_complete'
 call plug#end()
 
 " 设置高亮"
@@ -36,6 +38,9 @@ let g:gutentags_cache_dir = s:vim_tags
 if isdirectory("kernel/") && isdirectory("mm/")
     let g:gutentags_file_list_command = 'find arch/arm* arch/riscv block crypto drivers fs include init ipc kernel lib mm net security sound virt'
 endif
+
+" Set the clang lib path for auto completion
+let g:clang_library_path='/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
 
 " 检测 ~/.cache/tags 不存在就新建 "
 if !isdirectory(s:vim_tags)

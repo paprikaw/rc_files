@@ -1,6 +1,3 @@
-" 背景 主题设置
-autocmd vimenter * colorscheme gruvbox
-set background=dark 
 
 "Vim-Plug"
 "自动寻找vimplugin有没有安装"
@@ -59,3 +56,11 @@ let g:easyescape_chars = { "j": 1, "k": 1 }
 let g:easyescape_timeout = 100
 cnoremap jk <ESC>
 cnoremap kj <ESC>
+filetype plugin indent on
+
+" show existing tab with 4 spaces width
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab

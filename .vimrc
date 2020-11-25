@@ -12,7 +12,10 @@ Plug 'Yggdroot/LeaderF', { 'do': '.\install.bat' }
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+
+" Vim extension
 Plug 'zhou13/vim-easyescape'
+Plug 'wincent/terminus'
 
 " C support
 Plug 'dense-analysis/ale'

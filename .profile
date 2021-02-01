@@ -1,0 +1,10 @@
+export PATH=$HOME/.local/bin:$PATH
+export PATH=$PATH:/usr/local/smlnj/bin
+export PATH=/usr/local/bin:/usr/local/sbin:${PATH}
+export PATH=/Applications/Racket\ v7.9/bin:$PATH
+export LIBRARY_PATH=/usr/local/lib
+export CPLUS_INCLUDE_PATH=/usr/local/include
+export V2RAY_CLIENT_CONFIG_LOC=/Users/ericwhite/repository/v2ray_config/client_end/config.json
+export V2RAY_SERVER_CONFIG_LOC=/Users/ericwhite/repository/v2ray_config/server_end/config.json
+export REMOTE_SSH=admin@ec2-18-162-198-96.ap-east-1.compute.amazonaws.com
+export DOMAIN=blue.ericbai.top

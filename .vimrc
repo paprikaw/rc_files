@@ -17,8 +17,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'zhou13/vim-easyescape'
 Plug 'wincent/terminus'
 
-" Mips support
-Plug 'harenome/vim-mipssyntax'
 " C support
 Plug 'dense-analysis/ale'
 Plug 'Valloric/YouCompleteMe'

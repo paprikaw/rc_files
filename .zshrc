@@ -84,6 +84,9 @@ alias sc="sh $HOME/repository/shell_script_learning/v2ray-deployment/sync-config
 alias firefox=/Applications/Firefox.app/Contents/MacOS/firefox
 alias mr="cd ~/repository"
 alias ll="ls -la"
+alias mp="cd ~/Projects"
+
+alias links="ssh z5292197@login.cse.unsw.edu.au"
 
 # Snippest
 gitall() {
@@ -93,3 +96,9 @@ gitall() {
     git commit -m $1
     git status
 }
+
+# Proxy settings
+# surge listen to these ports
+export https_proxy=http://127.0.0.1:8234
+export http_proxy=http://127.0.0.1:8234
+export all_proxy=socks5://127.0.0.1:8235

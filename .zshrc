@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-source /usr/local/share/antigen/antigen.zsh
+source ~/antigen.zsh 
 # source $ZSH/oh-my-zsh.sh
 # export ZSH=$HOME/.oh-my-zsh
 
@@ -97,8 +97,3 @@ gitall() {
     git status
 }
 
-# Proxy settings
-# surge listen to these ports
-export https_proxy=http://127.0.0.1:8234
-export http_proxy=http://127.0.0.1:8234
-export all_proxy=socks5://127.0.0.1:8235

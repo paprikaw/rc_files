@@ -87,7 +87,7 @@ alias ll="ls -la"
 alias mp="cd ~/Projects"
 
 alias links="ssh z5292197@login.cse.unsw.edu.au"
-
+alias linksr="ssh z5292197@grieg.cse.unsw.edu.au"
 # Snippest
 gitall() {
     echo ">>>>>>>> Add changes"

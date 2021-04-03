@@ -85,7 +85,8 @@ alias firefox=/Applications/Firefox.app/Contents/MacOS/firefox
 alias mr="cd ~/repository"
 alias ll="ls -la"
 alias mp="cd ~/Projects"
-
+alias pg="pg_ctl"
+alias listen_proc="sudo lsof -i -P | grep LISTEN"
 alias links="ssh z5292197@login.cse.unsw.edu.au"
 alias linksr="ssh z5292197@grieg.cse.unsw.edu.au"
 # Snippest
@@ -102,3 +103,5 @@ gitall() {
 export https_proxy=http://127.0.0.1:8234
 export http_proxy=http://127.0.0.1:8234
 export all_proxy=socks5://127.0.0.1:8235
+export PGDATA=/usr/local/var/postgres
+export PATH="$PATH:$HOME/Projects/UNSW-Comp2401/Ass01"

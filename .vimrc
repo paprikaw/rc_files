@@ -33,7 +33,6 @@ Plug 'tpope/vim-fugitive'
 
 " Markdown surpport
 Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
 call plug#end()
 
 """ Compile files

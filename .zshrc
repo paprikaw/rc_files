@@ -105,3 +105,5 @@ export http_proxy=http://127.0.0.1:8234
 export all_proxy=socks5://127.0.0.1:8235
 export PGDATA=/usr/local/var/postgres
 export PATH="$PATH:$HOME/Projects/UNSW-Comp2401/Ass01"
+export HOMEBREW_NO_AUTO_UPDATE=1
+export PATH="$PATH:$HOME/scripts"

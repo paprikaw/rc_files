@@ -65,7 +65,6 @@ antigen apply
 # }
 
 # Referred to .profile
-source $HOME/.profile
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -75,8 +74,8 @@ source $HOME/.profile
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias py="python3"
-alias pip=pip3
+alias py="python"
+alias pip="python -m pip"
 alias gg="git status"
 alias vl="cat /usr/local/var/log/v2ray/error.log" # v2ray log
 alias sv="brew services" # services
@@ -98,12 +97,16 @@ gitall() {
     git status
 }
 
-# Proxy settings
-# surge listen to these ports
-export https_proxy=http://127.0.0.1:8234
-export http_proxy=http://127.0.0.1:8234
-export all_proxy=socks5://127.0.0.1:8235
-export PGDATA=/usr/local/var/postgres
-export PATH="$PATH:$HOME/Projects/UNSW-Comp2401/Ass01"
-export HOMEBREW_NO_AUTO_UPDATE=1
-export PATH="$PATH:$HOME/scripts"
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+
+source $HOME/.profile
+eval "$(pyenv init -)"

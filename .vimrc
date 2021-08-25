@@ -136,6 +136,8 @@ inoremap <C-k> <Up>
 cnoremap jk <ESC>
 cnoremap kj <ESC>
 
+vnoremap <C-c> :w !pbcopy<CR><CR>
+noremap <C-v> :r !pbpaste<CR><CR>
 
 filetype plugin indent on
 " show existing tab with 4 spaces width
@@ -144,3 +146,4 @@ set tabstop=4
 set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
+

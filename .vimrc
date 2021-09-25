@@ -135,9 +135,9 @@ inoremap <C-k> <Up>
 
 cnoremap jk <ESC>
 cnoremap kj <ESC>
+nnoremap <esc> :noh<return><esc>
 
 vnoremap <C-c> :w !pbcopy<CR><CR>
-noremap <C-v> :r !pbpaste<CR><CR>
 
 filetype plugin indent on
 " show existing tab with 4 spaces width

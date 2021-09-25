@@ -22,6 +22,9 @@ antigen bundle zsh-users/zsh-autosuggestions
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
 
+# node version manager
+antigen bundle lukechilds/zsh-nvm
+
 # Load the theme.
 # antigen theme robbyrussell
 antigen theme romkatv/powerlevel10k

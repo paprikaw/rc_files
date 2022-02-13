@@ -1,4 +1,4 @@
-# Path to your oh-my-zsh installation.
+# Path to your oh-my-zsh installation
 source /usr/local/share/antigen/antigen.zsh
 # source $ZSH/oh-my-zsh.sh
 # export ZSH=$HOME/.oh-my-zsh
@@ -91,6 +91,9 @@ alias pg="pg_ctl"
 alias listen_proc="sudo lsof -i -P | grep LISTEN"
 alias links="ssh z5292197@login.cse.unsw.edu.au"
 alias linksr="ssh z5292197@grieg.cse.unsw.edu.au"
+
+alias hstart="/usr/local/Cellar/hadoop/3.3.1/sbin/start-all.sh"
+alias hstop="/usr/local/Cellar/hadoop/3.3.1/sbin/stop-all.sh"
 # Snippest
 gitall() {
     echo ">>>>>>>> Add changes"
@@ -100,6 +103,10 @@ gitall() {
     git status
 }
 
+note() {
+    cd ~/Notes
+} 
+alias jyarn="/Users/ericwhite/.nvm/versions/node/v16.10.0/bin/yarn"
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.

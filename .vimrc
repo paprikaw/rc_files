@@ -1,4 +1,3 @@
-
 "Vim-Plug"
 "自动寻找vimplugin有没有安装"
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -135,7 +134,8 @@ inoremap <C-k> <Up>
 
 cnoremap jk <ESC>
 cnoremap kj <ESC>
-nnoremap <esc> :noh<return><esc>
+
+" nnoremap <esc> :noh<return><esc> This seems to cause trouble when <esc> is mapped to some command
 
 vnoremap <C-c> :w !pbcopy<CR><CR>
 

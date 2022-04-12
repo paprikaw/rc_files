@@ -25,7 +25,7 @@ export SPARK_HOME=/Users/ericwhite/bin/spark-3.1.2-bin-hadoop3.2
 export https_proxy=http://127.0.0.1:8234
 export http_proxy=http://127.0.0.1:8234
 export all_proxy=socks5://127.0.0.1:8235
-
+export NO_PROXY=localhost,127.0.0.1,10.96.0.0/12,192.168.59.0/24,192.168.39.0/24,192.168.64.0/24
 # Postgres
 export PGDATA=/usr/local/var/postgres
 

@@ -94,6 +94,8 @@ alias linksr="ssh z5292197@grieg.cse.unsw.edu.au"
 
 alias hstart="/usr/local/Cellar/hadoop/3.3.1/sbin/start-all.sh"
 alias hstop="/usr/local/Cellar/hadoop/3.3.1/sbin/stop-all.sh"
+alias nacos="sh ~/app/nacos/bin/startup.sh"
+alias archive="cd ~/archive"
 # Snippest
 gitall() {
     echo ">>>>>>>> Add changes"

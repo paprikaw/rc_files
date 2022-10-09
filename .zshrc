@@ -99,6 +99,8 @@ alias arc="cd ~/archive"
 alias repo="cd ~/repository"
 alias yarn="/Users/ericwhite/.nvm/versions/node/v16.10.0/bin/yarn"
 alias tmp="vi ~/tmp.md"
+alias hide="chflags hidden /Users/ericwhite/Desktop/*"
+alias show="chflags nohidden /Users/ericwhite/Desktop/*"
 
 # Snippest
 gitall() {

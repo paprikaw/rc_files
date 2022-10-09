@@ -7,10 +7,6 @@
 
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 sudo yabai --load-sa
-#YABAI STUFF
-
-# bsp or float (default: bsp)
-#yabai -m config layout bsp
 
 # float system preferences. Most of these just diable Yabai form resizing them.
 yabai -m rule --add app="^System Preferences$" sticky=on layer=above manage=off
@@ -38,9 +34,9 @@ yabai -m rule --add app="^CiscoSparkHelper$" manage=off
 yabai -m rule --add app="^Logi Options$" manage=off
 yabai -m rule --add app="^Cisco Webex Start$" manage=off
 yabai -m rule --add app="^Private Internet Access$" manage=off
-yabai -m rule --add app="^WeChat$" manage=off
+yabai -m rule --add app="^微信$" manage=off
 yabai -m rule --add app="^Focus To-Do$" manage=off
-yabai -m rule --add app="^NeteaseMusic$" manage=off
+yabai -m rule --add app="^网易云音乐$" manage=off
 yabai -m rule --add app="^Music$" manage=off
 yabai -m rule --add app="^iTerm2$" manage=off
 yabai -m rule --add app="^VirtualBox VM$" manage=off
@@ -70,10 +66,11 @@ yabai -m config mouse_action2                resize
 yabai -m config mouse_drop_action            swap
 
 # general space settings
+current_space="$(yabai -m query --displays)"
 yabai -m config layout                       bsp
-yabai -m config top_padding                  15
-yabai -m config bottom_padding               15
-yabai -m config left_padding                 15
-yabai -m config right_padding                15
-yabai -m config window_gap                   15
+yabai -m config top_padding                  20
+yabai -m config bottom_padding               20 
+yabai -m config left_padding                 200 
+yabai -m config right_padding                200 
+yabai -m config window_gap                   20
 echo "yabai configuration loaded.."

@@ -36,6 +36,30 @@ hyper - 7 : yabai -m window --space 7; yabai -m space --focus 7
 hyper - 8 : yabai -m window --space 8; yabai -m space --focus 8
 hyper - 9 : yabai -m window --space 9; yabai -m space --focus 9
 
+# focus on different display
+hyper - u : yabai -m display --focus 2
+hyper - i : yabai -m display --focus 1
+
+# rolling on different space
+hyper - m : yabai -m space --focus next
+hyper - n : yabai -m space --focus prev
+
+# send one window to different display
+hyper - o : yabai -m window --display 2; yabai -m display --focus 2;
+hyper - p : yabai -m window --display 1; yabai -m display --focus 1;
+
+hyper - s : yabai -m config top_padding 20 && \
+                yabai -m config bottom_padding 20 && \
+                yabai -m config left_padding 20 && \
+                yabai -m config right_padding 20 && \
+                yabai -m config window_gap 20 && \;
+
+hyper - b : yabai -m config top_padding 20 && \
+                yabai -m config bottom_padding 20 && \
+                yabai -m config left_padding 200 && \
+                yabai -m config right_padding 200 && \
+                yabai -m config window_gap 20 && \;
+
 # create desktop, move window and follow focus - uses jq for parsing json (brew install jq)
 hyper - w : yabai -m space --create && \
                    index="$(yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index')" && \

@@ -51,10 +51,10 @@ eval "$(pyenv init --path)"
 
 # Configure hadoop
 # export PATH=$PATH:$JAVA_HOME/bin
-export HADOOP_HOME=/Users/ericwhite/Hadoop/hadoop-3.3.1
-export PATH=$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$PATH
-export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
-export HADOOP_YARN_HOME=$HADOOP_HOME
+# export HADOOP_HOME=/Users/ericwhite/Hadoop/hadoop-3.3.1
+# export PATH=$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$PATH
+# export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
+# export HADOOP_YARN_HOME=$HADOOP_HOME
 
 # export HADOOP_MAPRED_HOME=$HADOOP_HOME
 # export HADOOP_COMMON_HOME=$HADOOP_HOME

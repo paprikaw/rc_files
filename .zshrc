@@ -16,7 +16,7 @@ antigen bundle textmate
 antigen bundle mvn 
 antigen bundle gradle 
 antigen bundle vi-mode 
-antigen bundle autojump
+# antigen bundle autojump
 # Auto suggestions bundle
 antigen bundle zsh-users/zsh-autosuggestions
 # Syntax highlighting bundle.
@@ -97,7 +97,7 @@ alias hstop="/usr/local/Cellar/hadoop/3.3.1/sbin/stop-all.sh"
 alias nacos="sh ~/app/nacos/bin/startup.sh"
 alias arc="cd ~/archive"
 alias repo="cd ~/repository"
-alias jyarn="/Users/ericwhite/.nvm/versions/node/v16.10.0/bin/yarn"
+alias yarn="/Users/ericwhite/.nvm/versions/node/v16.10.0/bin/yarn"
 alias tmp="vi ~/tmp.md"
 
 # Snippest

@@ -16,9 +16,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'zhou13/vim-easyescape'
 Plug 'wincent/terminus'
 
-" C support
-Plug 'dense-analysis/ale'
-Plug 'Valloric/YouCompleteMe'
 
 " compile at the same time
 Plug 'skywind3000/asyncrun.vim'

@@ -22,8 +22,8 @@ export PATH="$PATH:$HOME/Trading"
 export SPARK_HOME=/Users/ericwhite/bin/spark-3.1.2-bin-hadoop3.2
 
 # Some Enviroment variable related to proxy
-export https_proxy=http://127.0.0.1:6152;
-export http_proxy=http://127.0.0.1:6152;
+export https_proxy=http://127.0.0.1:6152
+export http_proxy=http://127.0.0.1:6152
 export all_proxy=socks5://127.0.0.1:6153
 export NO_PROXY=localhost,127.0.0.1,10.96.0.0/12,192.168.59.0/24,192.168.39.0/24,192.168.64.0/24
 # Postgres
@@ -32,22 +32,20 @@ export PGDATA=/usr/local/var/postgres
 # Homebrew
 export HOMEBREW_NO_AUTO_UPDATE=1
 
-
 # Configure nvm
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 # export PATH="$PATH:$HOME/.rvm/bin"
-# Configure pyenv and jenv path
 
+# Configure pyenv and jenv path
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
-
 
 # Configure hadoop
 # export PATH=$PATH:$JAVA_HOME/bin
@@ -63,9 +61,9 @@ eval "$(pyenv init --path)"
 # export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
 # export HADOOP_OPTS="$HADOOP_OPTS -Djava.library.path=$HADOOP_HOME/lib/native"
 ## export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib"
-export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
-export SPARK_HOME=/Users/ericwhite/spark
-export PATH=$SPARK_HOME/bin:$PATH 
+# export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
+# export SPARK_HOME=/Users/ericwhite/spark
+# export PATH=$SPARK_HOME/bin:$PATH
 ## export HADOOP_CONF_DIR=$HADOOP_HOME/libexec/etc/hadoop
 ## export HADOOP_COMMON_HOME=$HADOOP_HOME/libexec/etc/hadoop
 

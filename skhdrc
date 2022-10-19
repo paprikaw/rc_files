@@ -23,7 +23,7 @@ hyper - r : yabai -m space --rotate 90
 hyper - f : yabai -m window --toggle zoom-fullscreen
 
 # balance size of windows
-hyper - 0 : yabai -m space --balance
+hyper - b : yabai -m space --balance
 
 # move window and focus desktop
 hyper - 1 : yabai -m window --space 1; yabai -m space --focus 1
@@ -37,25 +37,24 @@ hyper - 8 : yabai -m window --space 8; yabai -m space --focus 8
 hyper - 9 : yabai -m window --space 9; yabai -m space --focus 9
 
 # focus on different display
-hyper - u : yabai -m display --focus 2
-hyper - i : yabai -m display --focus 1
+hyper - n : yabai -m display --focus 2
+hyper - m : yabai -m display --focus 1
 
 # rolling on different space
-hyper - m : yabai -m space --focus next
-hyper - n : yabai -m space --focus prev
+hyper - w : yabai -m space --focus next
+hyper - q : yabai -m space --focus prev
 
 # send one window to different display
-hyper - o : yabai -m window --display 2; yabai -m display --focus 2;
-hyper - p : yabai -m window --display 1; yabai -m display --focus 1;
+hyper - s : yabai -m window --display next; yabai -m display --focus next;
 
-# 大小屏幕窗口gap切换的快捷键
-hyper - s : yabai -m config top_padding 20 && \
+# 大小屏幕窗口gap切换的快捷键 hyper + (-/+)
+hyper - 0x18 : yabai -m config top_padding 20 && \
                 yabai -m config bottom_padding 20 && \
                 yabai -m config left_padding 20 && \
                 yabai -m config right_padding 20 && \
                 yabai -m config window_gap 20 && \;
 
-hyper - b : yabai -m config top_padding 20 && \
+hyper - 0x1B : yabai -m config top_padding 20 && \
                 yabai -m config bottom_padding 20 && \
                 yabai -m config left_padding 200 && \
                 yabai -m config right_padding 200 && \

@@ -8,44 +8,6 @@
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 sudo yabai --load-sa
 
-# float system preferences. Most of these just diable Yabai form resizing them.
-yabai -m rule --add app="^System Preferences$" sticky=on layer=above manage=off
-yabai -m rule --add app="^Mail$" sticky=on layer=above manage=off
-yabai -m rule --add app="^Surge$" sticky=on layer=above manage=off
-yabai -m rule --add app="^Karabiner-Elements$" sticky=on layer=above manage=off
-yabai -m rule --add app="^Karabiner-EventViewer$" sticky=on layer=above manage=off
-yabai -m rule --add app="^Finder$" sticky=on layer=above manage=off
-yabai -m rule --add app="^Keka$" sticky=on layer=above manage=off
-yabai -m rule --add app="^Alfred Preferences$" sticky=on layer=above manage=off
-yabai -m rule --add app="^Disk Utility$" sticky=on layer=above manage=off
-yabai -m rule --add app="^System Information$" sticky=on layer=above manage=off
-yabai -m rule --add app="^Activity Monitor$" sticky=on layer=above manage=off
-yabai -m rule --add app="^Path Finder$" manage=off
-yabai -m rule --add app="^Telegram$" manage=off
-yabai -m rule --add app="^TeamViewer$" sticky=off layer=above manage=off
-yabai -m rule --add app="Fantastical" manage=off
-yabai -m rule --add app="^Spotify$" manage=off
-yabai -m rule --add app="^Flux$" manage=off
-yabai -m rule --add app="^Time Out$" manage=off
-yabai -m rule --add app="^perl_client_app$" manage=off
-yabai -m rule --add app="^console$" manage=off
-yabai -m rule --add app="^Harvest$" manage=off
-yabai -m rule --add app="^CiscoSparkHelper$" manage=off
-yabai -m rule --add app="^Logi Options$" manage=off
-yabai -m rule --add app="^Cisco Webex Start$" manage=off
-yabai -m rule --add app="^Private Internet Access$" manage=off
-yabai -m rule --add app="^微信$" manage=off
-yabai -m rule --add app="^WeChat$" manage=off
-yabai -m rule --add app="^Focus To-Do$" manage=off
-yabai -m rule --add app="^网易云音乐$" manage=off
-yabai -m rule --add app="^Music$" manage=off
-yabai -m rule --add app="^iTerm2$" manage=off
-yabai -m rule --add app="^VirtualBox VM$" manage=off
-yabai -m rule --add app="^Digital Colour Meter$" manage=off
-yabai -m rule --add app="^系统偏好设置$" manage=off
-
-#END
-# New setting
 # global settings
 yabai -m config mouse_follows_focus          off
 yabai -m config focus_follows_mouse          off
@@ -76,3 +38,44 @@ yabai -m config left_padding                 200
 yabai -m config right_padding                200 
 yabai -m config window_gap                   20
 echo "yabai configuration loaded.."
+
+# float system preferences. Most of these just diable Yabai form resizing them.
+#yabai -m rule --add app="^System Preferences$" sticky=on layer=above manage=off
+#yabai -m rule --add app="^Mail$" sticky=on layer=above manage=off
+#yabai -m rule --add app="^Surge$" sticky=on layer=above manage=off
+#yabai -m rule --add app="^Karabiner-Elements$" sticky=on layer=above manage=off
+#yabai -m rule --add app="^Karabiner-EventViewer$" sticky=on layer=above manage=off
+#yabai -m rule --add app="^Finder$" sticky=on layer=above manage=off
+#yabai -m rule --add app="^Keka$" sticky=on layer=above manage=off
+#yabai -m rule --add app="^Alfred Preferences$" sticky=on layer=above manage=off
+#yabai -m rule --add app="^Permute 3$" sticky=on layer=above manage=off
+#yabai -m rule --add app="^Disk Utility$" sticky=on layer=above manage=off
+#yabai -m rule --add app="^System Information$" sticky=on layer=above manage=off
+#yabai -m rule --add app="^Activity Monitor$" sticky=on layer=above manage=off
+#yabai -m rule --add app="^Path Finder$" manage=off
+#yabai -m rule --add app="^Telegram$" manage=off
+#yabai -m rule --add app="^TeamViewer$" sticky=off layer=above manage=off
+#yabai -m rule --add app="Fantastical" manage=off
+#yabai -m rule --add app="^Spotify$" manage=off
+#yabai -m rule --add app="^Flux$" manage=off
+#yabai -m rule --add app="^Time Out$" manage=off
+#yabai -m rule --add app="^perl_client_app$" manage=off
+#yabai -m rule --add app="^console$" manage=off
+#yabai -m rule --add app="^Harvest$" manage=off
+#yabai -m rule --add app="^CiscoSparkHelper$" manage=off
+#yabai -m rule --add app="^Logi Options$" manage=off
+#yabai -m rule --add app="^Cisco Webex Start$" manage=off
+#yabai -m rule --add app="^Private Internet Access$" manage=off
+#yabai -m rule --add app="^微信$" manage=off
+#yabai -m rule --add app="^WeChat$" manage=off
+#yabai -m rule --add app="^Focus To-Do$" manage=off
+#yabai -m rule --add app="^网易云音乐$" manage=off
+#yabai -m rule --add app="^Music$" manage=off
+#yabai -m rule --add app="^iTerm2$" manage=off
+#yabai -m rule --add app="^VirtualBox VM$" manage=off
+#yabai -m rule --add app="^Digital Colour Meter$" manage=off
+#yabai -m rule --add app="^系统偏好设置$" manage=off
+#yabai -m rule --add app="^小程序$" manage=off
+
+yabai -m rule --add app="^1$"  manage=off
+yabai -m rule --add app!="^1$"  manage=off

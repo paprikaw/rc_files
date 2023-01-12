@@ -50,4 +50,4 @@ fi
 # Install antigen
 curl -L git.io/antigen >${ANTIGEN_PATH}/antigen.zsh
 # Get zshrc
-wget https://raw.githubusercontent.com/paprikaw/rc_files/main/.zshrc >$HOME/.zshrc
+wget -O - https://raw.githubusercontent.com/paprikaw/rc_files/main/.zshrc >$HOME/.zshrc

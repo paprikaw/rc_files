@@ -1,5 +1,6 @@
-# Path to your oh-my-zsh installation
-source /usr/local/share/antigen/antigen.zsh
+source $HOME/.profile
+# Path to your antigen path 
+source $ANTIGEN_PATH/antigen.zsh
 # source $ZSH/oh-my-zsh.sh
 # export ZSH=$HOME/.oh-my-zsh
 
@@ -30,21 +31,6 @@ antigen bundle lukechilds/zsh-nvm
 antigen theme romkatv/powerlevel10k
 # Tell Antigen that you're done.
 antigen apply
-# Plugin
-# plugins=(git 
-# 	textmate 
-# 	ruby 
-# 	osx 
-# 	mvn 
-# 	gradle 
-# 	vi-mode 
-#     autojump
-# 	zsh-autosuggestions)
-
-# User configuration
-#[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
-# export PATH=${PATH}:/Users/ericwhite/Library/Python/3.7/bin
-# export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -56,18 +42,12 @@ antigen apply
 #   export EDITOR='mvim'
 # fi
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
- 
- 
 # Remove the user@hostname prompt
 # prompt_context() {
 #   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
 # #    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
 #   fi
 # }
-
-# Referred to .profile
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -110,17 +90,3 @@ gitall() {
     git commit -m $1
     git status
 }
-
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-
-source $HOME/.profile
-eval "$(pyenv init -)"

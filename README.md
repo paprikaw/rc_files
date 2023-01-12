@@ -1,3 +1,3 @@
 # rc_files
 
-This repository including my .vimrc and .zshrc
+This repository includes my configuration files 

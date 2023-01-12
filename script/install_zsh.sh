@@ -40,7 +40,12 @@ if ! type wget > /dev/null; then
     exit
 fi
 
-# Install on-my-zsh
-sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+if [[ -z "${ZSH}" ]]; then
+    # Install on-my-zsh
+    sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+fi
+
+# Install antigen
 curl -L git.io/antigen > ${ANTIGEN_PATH}/antigen.zsh
+# Get zshrc
 wget https://raw.githubusercontent.com/paprikaw/rc_files/main/.zshrc > $HOME/.zshrc

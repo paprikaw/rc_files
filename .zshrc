@@ -32,6 +32,14 @@ antigen theme romkatv/powerlevel10k
 # Tell Antigen that you're done.
 antigen apply
 
+# manage on-my-zsh plug-ins
+plugins=(autojump)
+
+# Activate autojump
+if [[ $(uname) = "Linux" ]]; then
+  . /usr/share/autojump/autojump.sh
+fi
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 

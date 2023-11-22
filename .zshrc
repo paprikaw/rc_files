@@ -1,25 +1,31 @@
-source $HOME/.profile
-# Path to your antigen path 
+# Firstly enable on-my-zsh
+export ANTIGEN_PATH=/usr/local/share/antigen
 source $ANTIGEN_PATH/antigen.zsh
-# source $ZSH/oh-my-zsh.sh
-# export ZSH=$HOME/.oh-my-zsh
+antigen use oh-my-zsh
+
+
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-
 # Package manager
-# Load the oh-my-zsh's library.
-antigen use oh-my-zsh
-
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle textmate 
 antigen bundle mvn 
 antigen bundle gradle 
 antigen bundle vi-mode 
-# antigen bundle autojump
+
 # Auto suggestions bundle
 antigen bundle zsh-users/zsh-autosuggestions
+
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
 
@@ -40,31 +46,7 @@ if [[ $(uname) = "Linux" ]]; then
   . /usr/share/autojump/autojump.sh
 fi
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Remove the user@hostname prompt
-# prompt_context() {
-#   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-# #    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
-#   fi
-# }
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# Set personal aliases
 alias py="python"
 alias pip="python -m pip"
 alias gg="git status"
@@ -89,6 +71,10 @@ alias yarn="/Users/ericwhite/.nvm/versions/node/v16.10.0/bin/yarn"
 alias tmp="vi ~/tmp.md"
 alias hide="chflags hidden /Users/ericwhite/Desktop/*"
 alias show="chflags nohidden /Users/ericwhite/Desktop/*"
+# Alias from COMP90054-2023S1 ai autonomy assignment 1
+alias airun="bash ./docker/docker_runner.sh python"
+alias kct="kubectl"
+alias subre="python /Users/ericwhite/repository/Subtitles-Renamer/subsrenamer.py"
 
 # Snippest
 gitall() {

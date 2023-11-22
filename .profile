@@ -1,10 +1,11 @@
-#My own script that can be execute
+# My own script that can be execute
 export PATH="$PATH:$HOME/scripts"
-
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$PATH:/usr/local/smlnj/bin
+export PATH=$PATH:$HOME/package/istio-1.18.1/bin
 export PATH=/usr/local/bin:/usr/local/sbin:${PATH}
 export PATH=/Applications/Racket\ v7.9/bin:$PATH
+export PATH=/Applications/tinyMediaManager.app/Contents/MacOS:$PATH
 export LIBRARY_PATH=/usr/local/lib
 export CPLUS_INCLUDE_PATH=/usr/local/include
 
@@ -19,13 +20,7 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="$PATH:/usr/local/opt/riscv-gnu-toolchain/bin"
 export PATH="$PATH:$HOME/Trading"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-export SPARK_HOME=/Users/ericwhite/bin/spark-3.1.2-bin-hadoop3.2
 
-# Some Enviroment variable related to proxy
-export https_proxy=http://127.0.0.1:6152
-export http_proxy=http://127.0.0.1:6152
-export all_proxy=socks5://127.0.0.1:6153
-export NO_PROXY=localhost,127.0.0.1,10.96.0.0/12,192.168.59.0/24,192.168.39.0/24,192.168.64.0/24
 # Postgres
 export PGDATA=/usr/local/var/postgres
 
@@ -35,6 +30,40 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 # Configure nvm
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+. "$HOME/.cargo/env"
+
+# Configure antigen
+# export ANTIGEN_PATH=/usr/local/share/antigen
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/ericwhite/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ericwhite/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/ericwhite/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ericwhite/google-cloud-sdk/completion.zsh.inc'; fi
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/ericwhite/.pyenv/versions/anaconda3-2022.05/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/ericwhite/.pyenv/versions/anaconda3-2022.05/etc/profile.d/conda.sh" ]; then
+        . "/Users/ericwhite/.pyenv/versions/anaconda3-2022.05/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/ericwhite/.pyenv/versions/anaconda3-2022.05/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+# Configure sdkman
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# Configure gvm
+[[ -s "/Users/ericwhite/.gvm/scripts/gvm" ]] && source "/Users/ericwhite/.gvm/scripts/gvm"
+zprof
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 # export PATH="$PATH:$HOME/.rvm/bin"
@@ -46,26 +75,6 @@ eval "$(jenv init -)"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
-
-# Configure hadoop
-# export PATH=$PATH:$JAVA_HOME/bin
-# export HADOOP_HOME=/Users/ericwhite/Hadoop/hadoop-3.3.1
-# export PATH=$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$PATH
-# export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
-# export HADOOP_YARN_HOME=$HADOOP_HOME
-
-# export HADOOP_MAPRED_HOME=$HADOOP_HOME
-# export HADOOP_COMMON_HOME=$HADOOP_HOME
-# export HADOOP_HDFS_HOME=$HADOOP_HOME
-# export YARN_HOME=$HADOOP_HOME
-# export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
-# export HADOOP_OPTS="$HADOOP_OPTS -Djava.library.path=$HADOOP_HOME/lib/native"
-## export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib"
-# export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
-# export SPARK_HOME=/Users/ericwhite/spark
-# export PATH=$SPARK_HOME/bin:$PATH
-## export HADOOP_CONF_DIR=$HADOOP_HOME/libexec/etc/hadoop
-## export HADOOP_COMMON_HOME=$HADOOP_HOME/libexec/etc/hadoop
 
 # 配置binary程序
 export PATH="/Users/ericwhite/go/bin":$PATH

@@ -1,0 +1,212 @@
+{
+  "main": {
+    "id": "d738d970b5ee5b85",
+    "type": "split",
+    "children": [
+      {
+        "id": "7fa59e90cd576907",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "067763707e79a83b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "LiteratureNotes/liPatternLearningScheduling2024.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f8784ed8227d9ca1",
+    "type": "split",
+    "children": [
+      {
+        "id": "ef9659aa4a4e6729",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6550d8c9ece96742",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7f4267bbc80710a3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#GNN  ",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e6e158e1434f9814",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 295.5
+  },
+  "right": {
+    "id": "3ddfb34755ea46e2",
+    "type": "split",
+    "children": [
+      {
+        "id": "19f30efe98558088",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7f9d517b1a919415",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "LiteratureNotes/liPatternLearningScheduling2024.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e9dcf4de9534a67c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "c2587e0fbe972f47",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "LiteratureNotes/liPatternLearningScheduling2024.md"
+              }
+            }
+          },
+          {
+            "id": "1ade4abc83e15475",
+            "type": "leaf",
+            "state": {
+              "type": "zotero-annotation-view",
+              "state": {
+                "file": "LiteratureNotes/liPatternLearningScheduling2024.md",
+                "itemId": 2291,
+                "attachmentId": 2292,
+                "follow": "zt-reader"
+              }
+            }
+          },
+          {
+            "id": "8f7e0ba19b1f87a1",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "LiteratureNotes/liPatternLearningScheduling2024.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "graph:查看关系图谱": false,
+      "switcher:打开快速切换": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "067763707e79a83b",
+  "lastOpenFiles": [
+    "LiteratureNotes/liPatternLearningScheduling2024.md",
+    "LiteratureNotes/mampageDeepReinforcementLearning2023.md",
+    "LiteratureNotes/emamikhansariScalableModifiedDeep2024.md",
+    "LiteratureNotes/mampageDeepReinforcementLearning2023a.md",
+    "LiteratureNotes/fuerstLocalityawareLoadBalancingServerless2022.md",
+    "LiteratureNotes/pallewattaQoSawarePlacementMicroservicesbased2022.md",
+    "LiteratureNotes/pallewattaPlacementMicroservicesbasedIoT2023.md",
+    "LiteratureNotes/lvMicroserviceDeploymentEdge2022.md",
+    "LiteratureNotes/armaniCostEffectiveWorkloadAllocation2021.md",
+    "LiteratureNotes/apatComprehensiveReviewInternet2023.md",
+    "LiteratureNotes/guerreroEvaluationEfficiencyComparison2019.md",
+    "LiteratureNotes/samantaDymeDynamicMicroservice2020.md",
+    "V1.1 RL agent进展.md",
+    "LiteratureNotes/agarwalReinforcementLearningApproach2021.md",
+    "LiteratureNotes/samantaBattleMicroservicesLatencyOptimal2019.md",
+    "LiteratureNotes/filipMicroservicesSchedulingModel2018a.md",
+    "LiteratureNotes/liTaskPlacementResource2023.md",
+    "LiteratureNotes/dengFogBus2LightweightDistributed2021.md",
+    "Books/RL_book.pdf",
+    "未命名 1.md",
+    "Books",
+    "未命名.md",
+    "Thoughts.md",
+    "atoms/GNN introduction and playground.md",
+    "LiteratureNotes/islamPerformanceCostEfficientSpark2022.md",
+    "LiteratureNotes/delimitrouParagonQoSawareScheduling2013.md",
+    "LiteratureNotes/jayanettiDeepReinforcementLearning2022.md",
+    "atoms",
+    "LiteratureNotes/hanTailoredLearningBasedScheduling2021.md",
+    "LiteratureNotes/attachment/Screenshot 2023-12-20 at 4.37.32 pm.png",
+    "Slides",
+    "attachment/Screenshot 2024-01-24 at 7.52.15 am.png",
+    "Overview",
+    "Overview",
+    "attachment/Screenshot 2024-01-02 at 3.49.38 pm.png",
+    "Atoms",
+    "web",
+    "Useful Links",
+    "attachment/Screenshot 2023-12-25 at 2.47.39 pm.png",
+    "attachment/Screenshot 2023-12-25 at 2.36.53 pm.png",
+    "attachment/Screenshot 2023-12-25 at 2.36.32 pm.png",
+    "attachment/Screenshot 2023-12-25 at 2.36.13 pm.png",
+    "attachment/Screenshot 2023-12-25 at 11.28.51 am.png",
+    "attachment/Screenshot 2023-12-25 at 10.46.16 am.png",
+    "attachment/Screenshot 2023-12-25 at 10.25.49 am.png",
+    "未命名"
+  ]
+}

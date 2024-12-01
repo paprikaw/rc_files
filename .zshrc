@@ -1,17 +1,20 @@
-# Firstly enable on-my-zsh
-export ANTIGEN_PATH=/usr/local/share/antigen
-source $ANTIGEN_PATH/antigen.zsh
-antigen use oh-my-zsh
-
-
+# zmodload zsh/zprof # 用于debug，在需要开启的时候可以开启
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Firstly enable on-my-zsh
+export ANTIGEN_PATH=/usr/local/share/antigen
+source $ANTIGEN_PATH/antigen.zsh
+antigen use oh-my-zsh
+
+source ~/.profile
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -19,8 +22,6 @@ fi
 # Package manager
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle textmate 
-antigen bundle mvn 
-antigen bundle gradle 
 antigen bundle vi-mode 
 
 # Auto suggestions bundle
@@ -30,21 +31,21 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 # node version manager
-antigen bundle lukechilds/zsh-nvm
+# antigen bundle lukechilds/zsh-nvm
 
 # Load the theme.
-# antigen theme robbyrussell
+antigen theme robbyrussell
 antigen theme romkatv/powerlevel10k
 # Tell Antigen that you're done.
 antigen apply
 
 # manage on-my-zsh plug-ins
-plugins=(autojump)
+# plugins=(autojump)
 
 # Activate autojump
-if [[ $(uname) = "Linux" ]]; then
-  . /usr/share/autojump/autojump.sh
-fi
+# if [[ $(uname) = "Linux" ]]; then
+#   . /usr/share/autojump/autojump.sh
+# fi
 
 # Set personal aliases
 alias py="python"
@@ -75,6 +76,19 @@ alias show="chflags nohidden /Users/ericwhite/Desktop/*"
 alias airun="bash ./docker/docker_runner.sh python"
 alias kct="kubectl"
 alias subre="python /Users/ericwhite/repository/Subtitles-Renamer/subsrenamer.py"
+alias dashb="kubectl -n kubernetes-dashboard port-forward svc/kubernetes-dashboard-kong-proxy 8443:443"
+alias dasht="kubectl -n kubernetes-dashboard create token dashboard-admin-sa | pbcopy"
+alias chaot="kubectl create token account-cluster-manager-awahe | pbcopy"
+alias omv="ssh pi@192.168.0.12"
+alias omvr="ssh xu@192.168.0.12"
+alias gosrc="code /usr/local/go/src"
+alias resume="open ~/Documents/求职资料-简历等/Xu-Bai-Resume-CN-1.docx"
+alias v1="ssh ubuntu@45.113.232.150"
+alias v2="ssh ubuntu@115.146.92.106"
+alias v3="ssh ubuntu@115.146.94.60"
+alias v4="ssh ubuntu@45.113.235.236"
+alias v0="ssh ubuntu@115.146.93.94"
+alias nip="cat ~/.nip"
 
 # Snippest
 gitall() {
@@ -84,3 +98,24 @@ gitall() {
     git commit -m $1
     git status
 }
+
+
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/ericwhite/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/ericwhite/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/ericwhite/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/ericwhite/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+conda activate mubench
+# zprof # 用于debug
+#

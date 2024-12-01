@@ -1,13 +1,14 @@
 # My own script that can be execute
 export PATH="$PATH:$HOME/scripts"
 export PATH=$HOME/.local/bin:$PATH
-export PATH=$PATH:/usr/local/smlnj/bin
 export PATH=$PATH:$HOME/package/istio-1.18.1/bin
 export PATH=/usr/local/bin:/usr/local/sbin:${PATH}
-export PATH=/Applications/Racket\ v7.9/bin:$PATH
 export PATH=/Applications/tinyMediaManager.app/Contents/MacOS:$PATH
 export LIBRARY_PATH=/usr/local/lib
 export CPLUS_INCLUDE_PATH=/usr/local/include
+
+# Postgres
+export PGDATA=/usr/local/var/postgres
 
 # V2ray auto sync (My own script)
 export V2RAY_CLIENT_CONFIG_LOC=/Users/ericwhite/repository/v2ray_config/client_end/config.json
@@ -21,8 +22,6 @@ export PATH="$PATH:/usr/local/opt/riscv-gnu-toolchain/bin"
 export PATH="$PATH:$HOME/Trading"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-# Postgres
-export PGDATA=/usr/local/var/postgres
 
 # Homebrew
 export HOMEBREW_NO_AUTO_UPDATE=1
@@ -31,9 +30,6 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 . "$HOME/.cargo/env"
-
-# Configure antigen
-# export ANTIGEN_PATH=/usr/local/share/antigen
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/ericwhite/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ericwhite/google-cloud-sdk/path.zsh.inc'; fi
@@ -63,7 +59,6 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 # Configure gvm
 [[ -s "/Users/ericwhite/.gvm/scripts/gvm" ]] && source "/Users/ericwhite/.gvm/scripts/gvm"
-zprof
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 # export PATH="$PATH:$HOME/.rvm/bin"
